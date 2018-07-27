@@ -2,12 +2,15 @@
 
 html {
   font-size: 18px;
-
 }
 
 body {
   font-family: Helvetica;
   line-height: 1.4;
+}
+
+* {
+  margin: 0;
 }
 
 h1, h4 {
@@ -17,6 +20,12 @@ h1, h4 {
 .container {
   max-width: 960px;
   margin: 0 auto;
+}
+
+@media only screen and (max-width:768px) {
+  .container {
+    width: 100%;
+  }
 }
 
 
@@ -30,6 +39,19 @@ h1, h4 {
   background-size: cover;
 }
 
+@media only screen and (max-width:768px) {
+  .main-banner {
+    height: 22rem;
+  }
+}
+
+@media only screen and (max-width:605px) {
+  .main-banner {
+    height: 17rem;
+    background-size: cover;
+    background-position: left;
+  }
+}
 /*header*/
 
 .header {
@@ -42,6 +64,18 @@ h1, h4 {
   padding: 1rem 2rem;
   background-color: cadetblue;
   color: white;
+}
+
+@media only screen and (max-width:768px) {
+  .header {
+    position: static;
+  }
+}
+
+@media only screen and (max-width:605px) {
+  .header span {
+    display: none;
+  }
 }
 
 .header-left {
@@ -58,19 +92,31 @@ h1, h4 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-}
-
-.mobile-nav {
-  display: none;
-}
-
-.pc-nav {
   margin: 0;
 }
 
 .pc-nav li {
   padding-left: 2rem;
   list-style-type: none;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.mobile-nav li {
+  list-style-type: none;
+}
+
+@media only screen and (max-width:605px) {
+  .pc-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+    margin: 0;
+  }
 }
 
 /*Slogan*/
@@ -86,6 +132,33 @@ h1, h4 {
   padding: 1.5rem 5rem;
 }
 
+@media only screen and (max-width:960px) {
+  .slogan {
+    left: 0rem;
+  }
+}
+
+@media only screen and (max-width:768px) {
+    .slogan {
+      top: 5rem;
+      left: -2rem;
+      font-size: 1.33rem;
+      padding: 0.75rem 4rem;
+    }
+}
+
+@media only screen and (max-width:605px) {
+    .slogan {
+      float: none;
+      width: 100%;
+      top: 9rem;
+      left: 0;
+      font-size: 1rem;
+      padding: 0.5rem 0;
+      text-align: center;
+    }
+}
+
 /*Features*/
 
 .features {
@@ -93,7 +166,6 @@ h1, h4 {
   justify-content: center;
   padding-top: 3rem;
   margin: 0 auto;
-  height: 8rem;
 }
 
 .feature {
@@ -103,6 +175,7 @@ h1, h4 {
   align-items: center;
   width: 5rem;
   text-align: center;
+  height: 8rem;
 }
 
 .feature img {
@@ -113,12 +186,32 @@ h1, h4 {
   width: 3.5rem;
 }
 
-.exams {
+.exams,.fittings  {
   padding-right: 6rem;
 }
 
-.fittings {
-  padding-right: 6rem;
+@media only screen and (max-width:605px) {
+  .features {
+    padding: 3.77rem auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 0.77rem;
+  }
+
+  .feature {
+    height: auto;
+  }
+
+  .feature img {
+    padding-bottom: 1rem;
+  }
+
+  .exams,.fittings  {
+    padding-right: 0rem;
+    padding-bottom: 1.54rem;
+  }
+
 }
 
 /*Business Info*/
@@ -147,6 +240,26 @@ h4 {
   margin-right: 5%;
 }
 
+@media only screen and (max-width:605px) {
+  .business-info {
+    flex-direction: column;
+    font-size: 0.77rem;
+  }
+
+  .info, h4 {
+    width: 100%;
+  }
+
+  h4 {
+    text-align: center;
+    padding-left: 0rem;
+  }
+
+  .info p {
+    padding: 1rem 0 4rem 0;
+  }
+}
+
 /*Footer*/
 
 footer {
@@ -159,4 +272,20 @@ footer {
 footer img {
   height: 1.5rem;
   padding-right: 1rem;
+}
+
+@media only screen and (max-width:605px) {
+  footer span {
+    display: none;
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+  }
+
+  footer img {
+    padding-right: 0rem;
+  }
 }
