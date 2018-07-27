@@ -1,0 +1,162 @@
+/*Universal Style*/
+
+html {
+  font-size: 18px;
+
+}
+
+body {
+  font-family: Helvetica;
+  line-height: 1.4;
+}
+
+h1, h4 {
+  font-weight: bold;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+
+/*Main Banner*/
+
+.main-banner {
+  background-image: url("../resourses/medias/glasses-bg.png");
+  height: 30rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+/*header*/
+
+.header {
+  position: relative;
+  top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: cadetblue;
+  color: white;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+}
+
+.header-left img {
+  height: 1.5rem;
+  padding-right: 1rem;
+}
+
+.pc-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.pc-nav {
+  margin: 0;
+}
+
+.pc-nav li {
+  padding-left: 2rem;
+  list-style-type: none;
+}
+
+/*Slogan*/
+/*???*/
+
+.slogan {
+  float: right;
+  display: inline-block;
+  background-color: white;
+  position: relative;
+  top: 10rem;
+  left: 2rem;
+  padding: 1.5rem 5rem;
+}
+
+/*Features*/
+
+.features {
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+  margin: 0 auto;
+  height: 8rem;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 5rem;
+  text-align: center;
+}
+
+.feature img {
+  width: 5rem;
+}
+
+.exams img {
+  width: 3.5rem;
+}
+
+.exams {
+  padding-right: 6rem;
+}
+
+.fittings {
+  padding-right: 6rem;
+}
+
+/*Business Info*/
+
+.business-info {
+  padding-top: 3rem;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5rem;
+}
+
+/*需要对info设置而非p设置，因为p的基本宽度取决于
+flex items 分布后的宽度*/
+.info {
+  width: 35%;
+}
+
+h4 {
+  background-color: cadetblue;
+  width: 10rem;
+  padding: 0.5rem 0 0.5rem 1.25rem;
+  color: white;
+}
+
+.philosophy {
+  margin-right: 5%;
+}
+
+/*Footer*/
+
+footer {
+  padding: 4rem 0 4rem 4rem;
+  display: flex;
+  align-items: center;
+  background-color: azure;
+}
+
+footer img {
+  height: 1.5rem;
+  padding-right: 1rem;
+}
